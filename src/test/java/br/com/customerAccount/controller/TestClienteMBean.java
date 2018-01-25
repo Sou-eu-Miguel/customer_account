@@ -2,12 +2,10 @@ package br.com.customerAccount.controller;
 
 import static org.junit.Assert.*;
 
-import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import br.com.customerAccount.model.Cliente;
 
 public class TestClienteMBean {
 
@@ -16,9 +14,12 @@ public class TestClienteMBean {
 	@Before
 	public void init() {
 		cBean = new ClienteMBean();
-
 	}
 
+	@Test
+	public void testMediaSaldo() {
+		assertEquals(cBean.mediaClienteAplicacao(1500,2700), cBean.mediaClienteBD(1500, 2700),4);
+	}
 	
 
 }

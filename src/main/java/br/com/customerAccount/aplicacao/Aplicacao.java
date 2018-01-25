@@ -8,7 +8,7 @@ public class Aplicacao {
 		ClienteMBean cMbean = new ClienteMBean();
 
 		// Adicionando n clientes em base de dados
-//		cMbean.adicionarClienteLote(3000);
+		cMbean.adicionarClienteLote(3000);
 		System.out.println("\n========Média de Salário===========\n");
 		System.out.println("Média de salario gerada pela Ap: " + cMbean.mediaClienteAplicacao(1500, 2700));
 		System.out.println("Média de salario gerada pelo BD: " + cMbean.mediaClienteBD(1500, 2700));

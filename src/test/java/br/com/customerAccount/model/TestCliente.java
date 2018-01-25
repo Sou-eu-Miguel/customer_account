@@ -25,12 +25,12 @@ public class TestCliente {
 	public void test() {
 		Cliente cliente_mock = new Cliente();
 		cliente_mock.setAtivo(true);
-//		cliente_mock.setNome("Teste");
+		cliente_mock.setNome("Teste");
 
 		when(dao.buscar(1)).thenReturn(cliente_mock);
 
 		Cliente c = dao.buscar(1);
-//		assertEquals("Teste", c.getNome());
+		assertEquals("Teste", c.getNome());
 		assertTrue(c.isAtivo());
 	}
 
