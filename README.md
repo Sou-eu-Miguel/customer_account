@@ -4,8 +4,8 @@
 
 -------------
 #### Requirements
-mvn 3.X
-JDK 1.7+
+* mvn 3.X
+* JDK 1.7+
 
 #### Set Up
 Clone esse projeto e baixe as dependências do pom.xml:
